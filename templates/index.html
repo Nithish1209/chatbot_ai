@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat with NithishAi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .chat-box {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 600px;
+            background-color:aquamarine;
+            height:400px ;
+        }
+        
+        form {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 70%;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        
+        button[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        h3 {
+            margin: 10px;
+        }
+        
+        .user-message {
+            color: #1E90FF;
+        }
+        
+        .bot-message {
+            color: #008000;
+        }
+    </style>
+</head>
+<body>
+   <div class="chat-box">
+        <h1>Chat with Napple_Ai</h1> 
+        <form method="POST" action="/">
+            <input type="text" name="user_input" placeholder="Your message..." autofocus>
+            <button type="submit">Send</button>
+        </form>
+        <h3 class="user-message">You: {{ user_input }}</h3>
+        <h3 class="bot-message">Bot: {{ bot_response }}</h3>
+    </div>
+</body>
+</html>
