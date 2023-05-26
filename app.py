@@ -2,7 +2,7 @@ import openai
 from flask import Flask, request, render_template
 
 app = Flask(__name__)
-openai.api_key = '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'
+openai.api_key = 'opean ai key'
 
 def get_api_response(prompt: str) -> str | None:
     text: str | None = None
